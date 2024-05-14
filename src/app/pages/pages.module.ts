@@ -9,6 +9,7 @@ import {PaginatorModule} from "../@theme/components/paginator/paginator.module";
 import { UserComponent } from './user/user.component';
 import { ProductComponent } from './product/product.component';
 
+
 @NgModule({
   imports: [
     PagesRoutingModule,
@@ -21,6 +22,7 @@ import { ProductComponent } from './product/product.component';
     PagesComponent,
     UserComponent,
     ProductComponent,
+
   ],
   providers: []
 })
