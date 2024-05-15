@@ -15,9 +15,8 @@ const routes: Routes = [{
       data: {breadcrumb: 'Dashboard'},
     },
     {
-      path: 'categories',
-      component: CategoriesComponent,
-      data: {breadcrumb: 'Category'},
+      path: 'Category',
+     loadChildren:() => import('./categories/categories.module').then(m=>m.categoriesModule)
     },
   ],
 }];
