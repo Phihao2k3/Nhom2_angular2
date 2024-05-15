@@ -10,4 +10,18 @@ export const MENU_ITEMS: NbMenuItem[] = [
     icon: 'home-outline',
     link: '/pages/dashboard',
   },
+  {
+    title: 'Sản phẩm',
+    icon: '',
+    children: [
+      {
+        title: 'Thêm sản phẩm',
+        link: '/pages/product/addproduct',
+      },
+      {
+        title: 'Danh sách sản phẩm',
+        link: '/pages/product/listproduct',
+      },
+    ],
+  },
 ];

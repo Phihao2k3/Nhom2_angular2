@@ -7,7 +7,7 @@ import {DashboardModule} from './dashboard/dashboard.module';
 import {PagesRoutingModule} from './pages-routing.module';
 import {PaginatorModule} from "../@theme/components/paginator/paginator.module";
 import { UserComponent } from './user/user.component';
-import { ProductComponent } from './product/product.component';
+
 import { UsersComponent } from './users/users.component';
 
 @NgModule({
@@ -21,7 +21,7 @@ import { UsersComponent } from './users/users.component';
   declarations: [
     PagesComponent,
     UserComponent,
-    ProductComponent,
+ 
     UsersComponent,
   ],
   providers: []
