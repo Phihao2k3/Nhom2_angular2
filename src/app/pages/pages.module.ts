@@ -6,7 +6,7 @@ import {PagesComponent} from './pages.component';
 import {DashboardModule} from './dashboard/dashboard.module';
 import {PagesRoutingModule} from './pages-routing.module';
 import {PaginatorModule} from "../@theme/components/paginator/paginator.module";
-import { UserComponent } from './user/user.component';
+// import { UserComponent } from './user/user.component';
 import { ProductComponent } from './product/product.component';
 
 
@@ -20,7 +20,7 @@ import { ProductComponent } from './product/product.component';
   ],
   declarations: [
     PagesComponent,
-    UserComponent,
+    // UserComponent,
     ProductComponent
   ],
   providers: []

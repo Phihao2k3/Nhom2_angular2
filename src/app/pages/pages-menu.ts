@@ -10,4 +10,18 @@ export const MENU_ITEMS: NbMenuItem[] = [
     icon: 'home-outline',
     link: '/pages/dashboard',
   },
+  {
+    title: 'User',
+    icon: 'layout-outline',
+    children: [
+      {
+        title: 'Thêm User',
+        link: '/pages/user/adduser',
+      },
+      {
+        title: 'Hiển thị danh sách',
+        link: '/pages/user/listuser',
+      },
+    ],
+  },
 ];
