@@ -11,19 +11,16 @@ export const MENU_ITEMS: NbMenuItem[] = [
     link: '/pages/dashboard',
   },
   {
-    title: 'Order',
-    icon: 'shopping-cart-outline',
-    link: '/pages/order',
+    title: 'User',
+    icon: 'layout-outline',
     children: [
       {
-        title: 'Add Order',
-        icon: 'clipboard-outline',
-        link: '/pages/addoder',
+        title: 'Thêm User',
+        link: '/pages/user/adduser',
       },
       {
-        title: 'Oder List',
-        icon: 'list-outline',
-        link: '/pages/oderlist',
+        title: 'Hiển thị danh sách',
+        link: '/pages/user/listuser',
       },
     ],
   },

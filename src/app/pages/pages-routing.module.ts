@@ -5,6 +5,7 @@ import {DashboardComponent} from "./dashboard/dashboard.component";
 import {OderlistComponent} from "./orderlist/orderlist.component";
 import {AddorderComponent} from "./addorder/addorder.component";
 
+import { UserComponent } from './user/user.component';
 
 const routes: Routes = [{
   path: '',
@@ -13,7 +14,11 @@ const routes: Routes = [{
     {
       path: 'dashboard',
       component: DashboardComponent,
-      data: {breadcrumb: 'Dashboard'},
+      data: { breadcrumb: 'Dashboard' },
+    },
+    {
+      path: 'user',
+      loadChildren: () => import("./user/user.module").then(m => m.UserModule)
     },
     {
       path: 'oderlist',
