@@ -13,12 +13,21 @@ import {
 import {HttpClientModule} from "@angular/common/http";
 import {CoreModule} from "./@core/core.module";
 import {ThemeModule} from "./@theme/theme.module";
+import { OderlistComponent } from './pages/orderlist/orderlist.component';
+import { AddorderComponent } from './pages/addorder/addorder.component';
+
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OderlistComponent,
+    AddorderComponent,
+   
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
