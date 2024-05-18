@@ -21,7 +21,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
         link: '/pages/addoder',
       },
       {
-        title: 'Oder List',
+        title: 'Order List',
         icon: 'list-outline',
         link: '/pages/oderlist',
       },

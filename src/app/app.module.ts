@@ -1,30 +1,23 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { NbSidebarModule, NbMenuModule, NbDatepickerModule, NbDialogModule, NbWindowModule, NbToastrModule, NbChatModule, NbCardModule } from '@nebular/theme';
+import { Ng2SmartTableModule } from 'ng2-smart-table';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {
-  NbSidebarModule,
-  NbMenuModule,
-  NbDatepickerModule,
-  NbDialogModule, NbWindowModule, NbToastrModule, NbChatModule
-} from '@nebular/theme';
-import {HttpClientModule} from "@angular/common/http";
-import {CoreModule} from "./@core/core.module";
-import {ThemeModule} from "./@theme/theme.module";
-import { OderlistComponent } from './pages/orderlist/orderlist.component';
+import { CoreModule } from './@core/core.module';
+import { ThemeModule } from './@theme/theme.module';
+import { OrderlistComponent } from './pages/orderlist/orderlist.component';
 import { AddorderComponent } from './pages/addorder/addorder.component';
-
-import { FormsModule } from '@angular/forms';
-
 
 @NgModule({
   declarations: [
     AppComponent,
-    OderlistComponent,
+    OrderlistComponent,
     AddorderComponent,
-   
   ],
   imports: [
     FormsModule,
@@ -43,6 +36,8 @@ import { FormsModule } from '@angular/forms';
     }),
     CoreModule.forRoot(),
     ThemeModule.forRoot(),
+    Ng2SmartTableModule,  // Import ng2-smart-table module
+    NbCardModule,  // Import NbCardModule for using nb-card
   ],
   providers: [],
   bootstrap: [AppComponent]
