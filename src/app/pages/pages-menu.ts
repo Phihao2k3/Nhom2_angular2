@@ -12,18 +12,18 @@ export const MENU_ITEMS: NbMenuItem[] = [
   },
   {
     title: 'Category',
-    icon: 'home-outline',
+    icon: 'grid-outline',
     children: [
-      
-        {
-          title: 'Add Category',
-          link: '/pages/Category/addCategory',
-        },
-        {
-          title: 'List Category',
-          link: '/pages/Category/listCategory',
-        },
-      
-    ]
+      {
+        title: 'Add Category',
+        icon: 'plus-circle-outline',
+        link: '/pages/Category/addCategory',
+      },
+      {
+        title: 'List Category',
+        icon: 'list-outline',
+        link: '/pages/Category/listCategory',
+      },
+    ],
   },
 ];
