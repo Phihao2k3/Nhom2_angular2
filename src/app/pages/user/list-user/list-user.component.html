@@ -1,4 +1,4 @@
-<table class="table">
+<!-- <table class="table">
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -30,4 +30,15 @@
       <td><a href="#" class="btn btn-danger text-bg-danger text-decoration-none">Xoá</a></td>
     </tr>
   </tbody>
-</table>
+</table> -->
+
+<nb-card>
+  <nb-card-header>
+    Smart Table
+  </nb-card-header>
+
+  <nb-card-body>
+    <ng2-smart-table [settings]="settings" [source]="data">
+    </ng2-smart-table>
+  </nb-card-body>
+</nb-card>

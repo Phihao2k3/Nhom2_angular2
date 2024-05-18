@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { NbCardModule, NbIconModule, NbInputModule, NbTreeGridModule, NbActionsModule,
     NbButtonModule,NbCheckboxModule, NbDatepickerModule,NbRadioModule,NbSelectModule,NbUserModule} from '@nebular/theme';
-// import { Ng2SmartTableModule } from 'ng2-smart-table';
+import { Ng2SmartTableModule } from 'ng2-smart-table';
 
 import { ThemeModule } from '../../@theme/theme.module';
 import { UserRoutingModule, routedComponents } from './user-routing.module';
-import { FsIconComponent } from './list-user/list-user.component';
+// import { FsIconComponent } from './list-user/list-user.component';
 
 @NgModule({
   imports: [
@@ -15,7 +15,7 @@ import { FsIconComponent } from './list-user/list-user.component';
     NbInputModule,
     ThemeModule,
     UserRoutingModule,
-    // Ng2SmartTableModule,
+    Ng2SmartTableModule,
     NbActionsModule,
     NbButtonModule,
     NbCheckboxModule,
@@ -26,7 +26,7 @@ import { FsIconComponent } from './list-user/list-user.component';
   ],
   declarations: [
     ...routedComponents,
-    FsIconComponent,
+    // FsIconComponent,
   ],
 })
 export class UserModule { }

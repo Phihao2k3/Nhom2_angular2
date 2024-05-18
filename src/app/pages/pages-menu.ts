@@ -24,4 +24,18 @@ export const MENU_ITEMS: NbMenuItem[] = [
       },
     ],
   },
+  {
+    title: '',
+    icon: 'layout-outline',
+    children: [
+      {
+        title: 'Thêm User',
+        link: '/pages/user/adduser',
+      },
+      {
+        title: 'Hiển thị danh sách',
+        link: '/pages/user/listuser',
+      },
+    ],
+  },
 ];
