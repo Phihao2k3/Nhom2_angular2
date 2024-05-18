@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { LocalDataSource } from 'ng2-smart-table';
 @Component({
   selector: 'basic-example-data',
   template: `
@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
   `,
 })
 export class productlistComponent {
+
+  constructor() {
+ 
+  }
   settings = {
     add: {
       addButtonContent: '<i class="nb-plus"></i>',
@@ -120,4 +124,11 @@ export class productlistComponent {
       stock_quantity: 0,
     },
   ];
+  onDeleteConfirm(event): void {
+    if (window.confirm('Are you sure you want to delete?')) {
+      event.confirm.resolve();
+    } else {
+      event.confirm.reject();
+    }
+  }
 }
